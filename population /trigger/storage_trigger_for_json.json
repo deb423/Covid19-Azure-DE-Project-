@@ -1,0 +1,24 @@
+{
+	"name": "storage_trigger_for_json",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "adls_to_sqldb_pl",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/staging1/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d92e521e-fb47-4ca2-a16a-126226811ec1/resourceGroups/svproject1/providers/Microsoft.Storage/storageAccounts/smartvehiclesprojectnew",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

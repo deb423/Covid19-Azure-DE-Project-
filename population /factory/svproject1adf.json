@@ -1,0 +1,9 @@
+{
+	"name": "svproject1adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "887ec977-ac71-483f-8688-7bdcdd9adc78",
+		"tenantId": "cf7045f3-c3d5-41e2-9a9a-0caf1ef533fd"
+	}
+}
